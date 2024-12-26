@@ -574,18 +574,18 @@ var app = (function () {
     			t3 = text(/*something*/ ctx[1]);
     			attr_dev(div0, "id", "overlay");
     			attr_dev(div0, "class", "svelte-vl12n4");
-    			add_location(div0, file, 11, 2, 181);
+    			add_location(div0, file, 12, 2, 183);
     			attr_dev(h10, "id", "countlogo");
     			attr_dev(h10, "class", "svelte-vl12n4");
     			toggle_class(h10, "move", /*count*/ ctx[0] != 0);
     			toggle_class(h10, "unhide", /*count*/ ctx[0] != 0);
-    			add_location(h10, file, 16, 2, 251);
+    			add_location(h10, file, 17, 2, 253);
     			attr_dev(h11, "id", "count");
     			attr_dev(h11, "class", "svelte-vl12n4");
-    			add_location(h11, file, 17, 2, 372);
+    			add_location(h11, file, 18, 2, 374);
     			attr_dev(div1, "id", "counteer");
     			attr_dev(div1, "class", "svelte-vl12n4");
-    			add_location(div1, file, 10, 1, 159);
+    			add_location(div1, file, 11, 1, 161);
     			attr_dev(body, "id", "home");
     			add_location(body, file, 9, 0, 141);
     		},

@@ -8,6 +8,7 @@
 </script>
 
 <body id="home">
+	
 	<div id="counteer">
 		<div id="overlay">
 			<Counter bind:count></Counter>
