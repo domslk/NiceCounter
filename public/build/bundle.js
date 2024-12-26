@@ -436,8 +436,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			button = element("button");
-    			button.textContent = "count ++";
-    			attr_dev(button, "class", "svelte-1cordgb");
+    			attr_dev(button, "class", "svelte-11o3vof");
     			add_location(button, file$1, 3, 0, 41);
     		},
     		l: function claim(nodes) {
@@ -537,14 +536,15 @@ var app = (function () {
 
     function create_fragment(ctx) {
     	let body;
-    	let div;
-    	let h10;
-    	let t0;
-    	let t1;
-    	let h11;
-    	let t3;
+    	let div1;
+    	let div0;
     	let counter;
     	let updating_count;
+    	let t0;
+    	let h10;
+    	let t1;
+    	let t2;
+    	let h11;
     	let current;
 
     	function counter_count_binding(value) {
@@ -563,25 +563,29 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			body = element("body");
-    			div = element("div");
+    			div1 = element("div");
+    			div0 = element("div");
+    			create_component(counter.$$.fragment);
+    			t0 = space();
     			h10 = element("h1");
-    			t0 = text(/*something*/ ctx[1]);
-    			t1 = space();
+    			t1 = text(/*something*/ ctx[1]);
+    			t2 = space();
     			h11 = element("h1");
     			h11.textContent = "Counter";
-    			t3 = space();
-    			create_component(counter.$$.fragment);
+    			attr_dev(div0, "id", "overlay");
+    			attr_dev(div0, "class", "svelte-13rtldc");
+    			add_location(div0, file, 11, 2, 181);
     			attr_dev(h10, "id", "count");
-    			attr_dev(h10, "class", "svelte-g3ee8");
-    			add_location(h10, file, 11, 2, 181);
+    			attr_dev(h10, "class", "svelte-13rtldc");
+    			add_location(h10, file, 14, 2, 245);
     			attr_dev(h11, "id", "countlogo");
-    			attr_dev(h11, "class", "svelte-g3ee8");
+    			attr_dev(h11, "class", "svelte-13rtldc");
     			toggle_class(h11, "move", /*count*/ ctx[0] != 0);
     			toggle_class(h11, "unhide", /*count*/ ctx[0] != 0);
-    			add_location(h11, file, 13, 2, 247);
-    			attr_dev(div, "id", "counteer");
-    			attr_dev(div, "class", "svelte-g3ee8");
-    			add_location(div, file, 10, 1, 159);
+    			add_location(h11, file, 16, 2, 311);
+    			attr_dev(div1, "id", "counteer");
+    			attr_dev(div1, "class", "svelte-13rtldc");
+    			add_location(div1, file, 10, 1, 159);
     			attr_dev(body, "id", "home");
     			add_location(body, file, 9, 0, 141);
     		},
@@ -590,26 +594,17 @@ var app = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, body, anchor);
-    			append_dev(body, div);
-    			append_dev(div, h10);
-    			append_dev(h10, t0);
-    			append_dev(div, t1);
-    			append_dev(div, h11);
-    			append_dev(div, t3);
-    			mount_component(counter, div, null);
+    			append_dev(body, div1);
+    			append_dev(div1, div0);
+    			mount_component(counter, div0, null);
+    			append_dev(div1, t0);
+    			append_dev(div1, h10);
+    			append_dev(h10, t1);
+    			append_dev(div1, t2);
+    			append_dev(div1, h11);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			if (!current || dirty & /*something*/ 2) set_data_dev(t0, /*something*/ ctx[1]);
-
-    			if (!current || dirty & /*count*/ 1) {
-    				toggle_class(h11, "move", /*count*/ ctx[0] != 0);
-    			}
-
-    			if (!current || dirty & /*count*/ 1) {
-    				toggle_class(h11, "unhide", /*count*/ ctx[0] != 0);
-    			}
-
     			const counter_changes = {};
 
     			if (!updating_count && dirty & /*count*/ 1) {
@@ -619,6 +614,15 @@ var app = (function () {
     			}
 
     			counter.$set(counter_changes);
+    			if (!current || dirty & /*something*/ 2) set_data_dev(t1, /*something*/ ctx[1]);
+
+    			if (!current || dirty & /*count*/ 1) {
+    				toggle_class(h11, "move", /*count*/ ctx[0] != 0);
+    			}
+
+    			if (!current || dirty & /*count*/ 1) {
+    				toggle_class(h11, "unhide", /*count*/ ctx[0] != 0);
+    			}
     		},
     		i: function intro(local) {
     			if (current) return;

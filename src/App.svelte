@@ -9,11 +9,14 @@
 
 <body id="home">
 	<div id="counteer">
+		<div id="overlay">
+			<Counter bind:count></Counter>
+		</div>
 		<h1 id="count">{something}</h1> <!--  the counter text  --> 
 		
-		<h1 id = "countlogo" class:move = {count != 0} class:unhide = {count != 0}>Counter</h1>
+		<h1 id = "countlogo" class:move = {count != 0} class:unhide = {count != 0}>Counter</h1> <!--  the counter "logo"  --> 
 		
-		<Counter bind:count></Counter>
+		
 	</div>
 	
 	
@@ -33,6 +36,7 @@
 		color: white;
 		text-align: center;
 		padding-top: 20%;	
+		
 	}
 
 	
@@ -61,6 +65,12 @@
 		display: block !important;
 	}
 
+	#overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		margin-top: -20%;
+	}
 	
 	
 </style>
