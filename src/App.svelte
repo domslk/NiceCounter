@@ -12,10 +12,10 @@
 		<div id="overlay">
 			<Counter bind:count></Counter>
 		</div>
-		<h1 id="count">{something}</h1> <!--  the counter text  --> 
+		
 		
 		<h1 id = "countlogo" class:move = {count != 0} class:unhide = {count != 0}>Counter</h1> <!--  the counter "logo"  --> 
-		
+		<h1 id="count">{something}</h1> <!--  the counter text  --> 
 		
 	</div>
 	
@@ -41,6 +41,7 @@
 
 	
 	#count {
+		padding-top: 40px;
 		font-size: 60px;
 		
 	}
