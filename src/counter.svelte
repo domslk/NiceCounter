@@ -11,7 +11,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        transition: background 0.6s;
+        transition: background 0.95s;
     }
 
     button:active {
