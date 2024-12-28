@@ -436,7 +436,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			button = element("button");
-    			attr_dev(button, "class", "svelte-11o3vof");
+    			attr_dev(button, "class", "svelte-xj1drf");
     			add_location(button, file$1, 3, 0, 41);
     		},
     		l: function claim(nodes) {
